@@ -1,0 +1,10 @@
+<div *ngFor="let x of data | async | select: 'videos'">
+ <div><b>{{x.id}}</b>{{x.title}}</div>
+</div>
+
+<label>
+  Title
+  <input type="text" [(ngModel)]="video.title">
+</label>
+
+<button (click)="createVideo()">{{title}}</button>
